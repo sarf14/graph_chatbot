@@ -1,0 +1,14 @@
+# llm_groq.py
+import groq
+
+class GroqLLM:
+    def __init__(self, api_key, model="llama-3.3-70b-versatile"):
+        self.client = groq.Client(api_key=api_key)
+        self.model = model
+
+    def chat(self, prompt):
+        response = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return response.choices[0].message.content.strip()
