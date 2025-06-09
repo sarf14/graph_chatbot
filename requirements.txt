@@ -1,0 +1,9 @@
+pandas
+openai
+pandasai
+matplotlib
+seaborn
+python-dotenv
+requests
+groq
+streamlit
