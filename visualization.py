@@ -99,7 +99,7 @@ def generate_dashboard(data, question, prompt: str):
         else:
             st.warning("⚠️ No chart generated. Retrying...")
 
-            fallback_prompt = f"Plot a simple line chart using only these columns: {', '.join(data.columns)}"
+            fallback_prompt = f"Plot a line chart which looks visually appeasing using only these columns: {', '.join(data.columns)}"
             result = smart_df.chat(fallback_prompt)
 
             if isinstance(result, str) and result.strip().startswith("Python"):
