@@ -1,0 +1,6 @@
+atm_id  , total_transactions ,    success_rate
+ MUPI0036 ,211, 63.0
+ MUPI0001 ,26, 61.5
+ MUPI0035 ,296, 58.4
+ MUPI0026 ,515, 53.5
+ UUH11020 ,57, 52.6
